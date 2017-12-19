@@ -1,28 +1,23 @@
-h1 { color: #FFF; font-size: 30px; }
-h2 { color: #FFF; font-size: 22px; }
-p { color: #FFF; }
+// h1 { color: #FFF; font-size: 30px; }
+// h2 { color: #FFF; font-size: 22px; }
+// p { color: #FFF; }
 
-body{
-    background-image: url("../img/fundo-final.png");
-    background-color: #5eb9e6;
-}
+// div.parallax { background-color: #5eb9e6; }
+// .parallax {
+//     /* The image used */
+//     background-image: url("img_parallax.jpg");
 
-div.parallax { background-color: #5eb9e6; }
-.parallax {
-    /* The image used */
-    background-image: url("img_parallax.jpg");
+//     Set a specific height
+//     min-height: 500px; 
 
-    /* Set a specific height */
-    min-height: 500px; 
+//     /* Create the parallax scrolling effect */
+//     background-attachment: fixed;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-section { margin: 7em 0 0 0; padding: 1em; min-height: 70vw; }
+/*section { margin: 7em 0 0 0; padding: 1em; min-height: 70vw; }
 section:not(:first-child){ margin: 15em 0 0 0; }
 
 footer { background-color: #191513; }
@@ -34,10 +29,157 @@ footer { background-color: #191513; }
 
 .page-wrapper { font-size: 90%;	width: 90%; max-width: 1124px; margin: 0 auto; position: relative; z-index: 1; } 
 
-// div.parallax { background-color: #5eb9e6; position: fixed; top: 0; left: 0; z-index: 0; width: 100%; height: 1000%; }
+div.parallax { background-color: #5eb9e6; position: fixed; top: 0; left: 0; z-index: 0; width: 100%; height: 1000%; }
 
 ul#menu { position: fixed; z-index: 3; top: calc( 50% - 72.5px ); left: 1em; }
 
 ul#menu li { list-style: none; margin: 0 0 10px 0; }
 
-ul#menu a.dot { display: block; width: 15px; height: 15px; border: 2px solid #FFF; content: " "; cursor: pointer; border-radius: 50%; }
+ul#menu a.dot { display: block; width: 15px; height: 15px; border: 2px solid #FFF; content: " "; cursor: pointer; border-radius: 50%; }*/
+
+
+
+// Magic parallax mixins
+$parallax-perspective : 1 !default;
+$parallax-element     : "body" !default;
+$parallax-ios         : true !default;
+
+@mixin parallax-init(
+  $perspective  : $parallax-perspective,
+  $element      : $parallax-element,
+  $parallax-ios : $parallax-ios
+  ) {
+  @if $element == "body" {
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  }
+  #{$element} {
+    overflow: auto;
+    perspective: $perspective * 1px;
+    transform-style: preserve-3d;
+    // Allows for smooth scrolling but disables parallax effects.
+    @if $parallax-ios == false {
+      -webkit-overflow-scrolling: touch;
+    }
+    // Preserve 3D
+    &, * {
+      transform-style: preserve-3d;
+    }
+  }
+}
+
+@mixin parallax(
+  $distance    : 0,
+  $perspective : $parallax-perspective
+  ) {
+  transform:
+    translateZ($distance * $perspective * 1px)
+    scale(abs($distance - 1))
+  ;
+  z-index: $distance * 1000;
+}
+
+// End of magic parallax mixins
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+$primary: #1586D1;
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@include parallax-init;
+
+.container-fluid {
+  .img1 {
+    top: 0px;
+    left: 0px;
+  }
+  .img2 {
+    @include parallax(.2);
+    top: 451px;
+    right: 352px;
+  }
+  .img3 {
+    @include parallax(.2);
+    top: 670px;
+    right: 104px;
+  }
+  .img4 {
+    @include parallax(.1);
+    top: 500px;
+    left: 500px;
+  }
+  .img5 {
+    top: 0px;
+    right: 43px;
+  }
+  .img6 {
+    @include parallax(.4);
+    top: 1180px;
+    left: 500px;
+  }
+  .img7 {
+    top: 1830px;
+    left: 0px;
+  }
+  .img8 {
+    @include parallax(.4);
+    top: 3585px;
+    right: 239px;
+  }
+  .img9 {
+    @include parallax(-1);
+    top: 3700px;
+    left: 94px;
+  }
+  .img10 {
+    @include parallax(.2);
+    top: 4600px;
+    right: -2px;
+  }
+  .img11 {
+    @include parallax(.2);
+    top: 6341px;
+    right: 86px;
+  }
+  .img12 {
+    top: 7130px;
+    left: 0px;
+  }
+  .img13 {
+    @include parallax(.4);
+    top: 1710px;
+    right: 630px;
+  }
+  > * {
+    position: absolute;
+  }
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  background: #5eb9e6;
+  line-height: 1;
+}
+
+h1, h2 {
+  font-weight: 100;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5em;
+  color: $primary;
+}
+h2 {
+  font-size: 3em;
+  @include parallax(.2);
+}
