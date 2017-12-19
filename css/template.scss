@@ -1,77 +1,43 @@
-article {
-	margin: 7em 0 0 0;
-	padding: 1em;
-	min-height: 30vw;
-}
-article:not(:first-child){
-  margin: 15em 0 0 0;
+h1 { color: #FFF; font-size: 30px; }
+h2 { color: #FFF; font-size: 22px; }
+p { color: #FFF; }
+
+body{
+    background-image: url("../img/fundo-final.png");
+    background-color: #5eb9e6;
 }
 
-footer {	
-	background-color: #191513;
+div.parallax { background-color: #5eb9e6; }
+.parallax {
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+section { margin: 7em 0 0 0; padding: 1em; min-height: 70vw; }
+section:not(:first-child){ margin: 15em 0 0 0; }
+
+footer { background-color: #191513; }
 .page-header,
 .page-wrapper,
-.page-footer {
-	position: relative;
-}
+.page-footer { position: relative; }
 
-.page-header {
-	text-indent: 1em;
-}
-.page-header {
-  padding: .5em;
-  display: inline-block;
-  color: #FFF;
-} 
+.page-header { text-indent: 1em; }
 
-.page-wrapper {
-	font-size: 90%;	
-	width: 90%;
-	
-	max-width: 1124px;	
-	
-	margin: 0 auto;
-	position: relative;
-	z-index: 1;
-} 
+.page-wrapper { font-size: 90%;	width: 90%; max-width: 1124px; margin: 0 auto; position: relative; z-index: 1; } 
 
-.page-footer {
-}
+// div.parallax { background-color: #5eb9e6; position: fixed; top: 0; left: 0; z-index: 0; width: 100%; height: 1000%; }
 
-div.grid {
-	background-color: #5eb9e6;
-	
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 0;
-	width: 100%;
-	height: 1000%;
-}
+ul#menu { position: fixed; z-index: 3; top: calc( 50% - 72.5px ); left: 1em; }
 
-article {
-	/* box-shadow: .3em .3em .4em #ddd; */
-}
+ul#menu li { list-style: none; margin: 0 0 10px 0; }
 
-ul#menu {
-	position: fixed;
-	z-index: 3;
-	top: calc( 50% - 72.5px );
-	left: 1em;
-}
-
-ul#menu li {
-	list-style: none;	
-	margin: 0 0 10px 0;
-}
-
-ul#menu span.dot {
-	display: block;
-	width: 15px;
-	height: 15px;
-	border: 2px solid #FFF;
-	content: " ";
-	cursor: pointer;
-	border-radius: 50%;
-}
+ul#menu a.dot { display: block; width: 15px; height: 15px; border: 2px solid #FFF; content: " "; cursor: pointer; border-radius: 50%; }
