@@ -12,20 +12,43 @@
   <link rel="stylesheet" href="css/template.min.css">
   <link rel="stylesheet" href="css/animate.css">
 
-  <title>Styleguide área de testes</title>
+  <title>inGaia</title>
 </head>
-<body>   
 
+<body data-spy="scroll">
 
+<nav id="navbar1" class="navbar menu"> 
+  <ul class="nav" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link dot scroll-down" href="#section1"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link dot scroll-down" href="#section2"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link dot scroll-down" href="#section3"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link dot scroll-down" href="#section4"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link dot scroll-down" href="#section5"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link dot scroll-down" href="#section6"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link dot scroll-down" href="#section7"></a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Imagens -->
 <div class="container-fluid">
   <img src="img/landing-page-01.png" alt="teste" class="img1 img-fluid" />
-  <div class="row">
-    <section>
-      <h1>Em 2017, a<br>inGaia cresceu...</h1>
-    </section>  
-  </div>
   <img src="img/landing-page-02.png" alt="teste" class="img5 img-fluid" />
   <img src="img/landing-page-03.png" alt="teste" class="img3 img-fluid" />
+  <img src="img/dots-page-03.png" alt="teste" class="img14 img-fluid" />
   <img src="img/circle-01.png" alt="teste" class="img2 img-fluid" />
   <img src="img/cheese_mark.png" alt="teste" class="img6 img-fluid" />
   <img src="img/triangle.png" alt="teste" class="img13 img-fluid" />
@@ -37,7 +60,84 @@
   <img src="img/landing-page-09.png" alt="teste" class="img12 img-fluid" />
 </div>
 
+<div data-spy="scroll" data-target="#navbar1" data-offset="0" class="scrollspy1">
+
+  <!-- section1 -->
+  <div class="container">
+    <div class="row">
+      <section id="section1" class="section1 w-100">
+        <div class="col-lg-8 col-sm-10 d-block ml-auto">
+          <h1 class="">Em 2017, a<br>inGaia cresceu...</h1>  
+        </div>
+        <div class="col-12 d-block mx-auto seta1">
+          <a class="scroll-down arrow" href="#section2"><img src="img/arrow.png" alt=""></a>
+        </div>
+      </section>
+    </div>
+  </div> <!-- section1 -->
+
+  <!-- section2 -->
+  <div class="container">
+    <section id="section2" class="section2">
+      <div class="col-lg-10 col-sm-10 d-block mx-auto">
+        <h2>Vestiu a camisa<br>e trabalhou muito!</h2>  
+      </div>
+      <p class="col-lg-10 col-sm-10 d-block mx-auto">O nosso time se dedicou para melhorar a rotina dos<br> corretores de imóveis: desenvolveu ferramentas e otimizou<br> as etapas de atendimento para melhorar ainda mais a<br> comunicação com cada cliente.</p>
+      <div class="col-12 col-sm-10 d-block mx-auto">
+        <div class="row">
+          <div class="col-6">
+            <h3>Novos produtos</h3>  
+            <div class="mt-3">
+              <img src="img/ads.png" alt="inGaiaAds" class="img-fluid mr-5">
+              <img src="img/corretor.png" alt="inGaia Corretor" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-6">
+            <h3>Novas funcionalidades</h3>  
+            <div class="mt-3">
+              <img src="img/smartchat.png" alt="SmartChat" class="img-fluid mr-5">
+              <img src="img/agenda.png" alt="Agenda" class="img-fluid mr-5">
+              <img src="img/inteligencia.png" alt="Inteligência de Mercado" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="col-12 d-block mx-auto seta1">
+        <a class="scroll-down arrow" href="#section3"><img src="img/arrow.png" alt=""></a>
+      </div>
+    </section>
+  </div> <!-- section2 -->
+
+<!-- section3 -->
+<div class="container">
+  <div class="row">
+    <section id="section3" class="section3">
+      <div class="row">
+        <div class="col-6">
+          <img src="img/video01.png" alt="">
+        </div>
+        <div class="col-6">
+          <div class="d-block mx-auto">
+            <h2>Espalhamos<br>conhecimento</h2>  
+          </div>
+          <p class="d-block mx-auto">Esse foi o ano das lives!<br>Discutimos diversos assuntos, demos dicas e sugestões e<br> apresentamos as melhores soluções para o setor. Foram<br> verdadeiras aulas de quem entende do assunto para<br> capacitar os corretores imobiliários ;-)</p>
+        </div>
+      </div>
+      <div class="col-12 d-block mx-auto">
+        <a class="btn btn1" href="#" role="button">Confira todas as lives</a>
+      </div>  
+      <div class="col-12 d-block mx-auto seta1">
+        <a class="scroll-down arrow" href="#section4"><img src="img/arrow.png" alt=""></a>
+      </div>    
+    </section>
+  </div>
+</div> <!-- section3 -->
+
+</div> <!-- scrollspy1 -->
+
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="node_modules/ingaia.ux.styleguide/dist/app.js"></script>
   <script src="js/functions.js"></script>
 </body>

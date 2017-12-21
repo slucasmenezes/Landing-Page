@@ -1,43 +1,10 @@
-// h1 { color: #FFF; font-size: 30px; }
-// h2 { color: #FFF; font-size: 22px; }
-// p { color: #FFF; }
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900|Open+Sans');
 
-// div.parallax { background-color: #5eb9e6; }
-// .parallax {
-//     /* The image used */
-//     background-image: url("img_parallax.jpg");
-
-//     Set a specific height
-//     min-height: 500px; 
-
-//     /* Create the parallax scrolling effect */
-//     background-attachment: fixed;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
-
-/*section { margin: 7em 0 0 0; padding: 1em; min-height: 70vw; }
-section:not(:first-child){ margin: 15em 0 0 0; }
-
-footer { background-color: #191513; }
-.page-header,
-.page-wrapper,
-.page-footer { position: relative; }
-
-.page-header { text-indent: 1em; }
-
-.page-wrapper { font-size: 90%;	width: 90%; max-width: 1124px; margin: 0 auto; position: relative; z-index: 1; } 
-
-div.parallax { background-color: #5eb9e6; position: fixed; top: 0; left: 0; z-index: 0; width: 100%; height: 1000%; }
-
-ul#menu { position: fixed; z-index: 3; top: calc( 50% - 72.5px ); left: 1em; }
-
-ul#menu li { list-style: none; margin: 0 0 10px 0; }
-
-ul#menu a.dot { display: block; width: 15px; height: 15px; border: 2px solid #FFF; content: " "; cursor: pointer; border-radius: 50%; }*/
-
-
+h1 { color: #FFF !important; font-family: 'Lato', sans-serif !important;}
+h2 { color: #FFF; }
+h3{color: #ffffff;}
+p { color: #FFF; }
 
 // Magic parallax mixins
 $parallax-perspective : 1 !default;
@@ -92,6 +59,7 @@ $primary: #1586D1;
 body{
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 @include parallax-init;
@@ -100,86 +68,206 @@ body{
   .img1 {
     top: 0px;
     left: 0px;
-  }
-  .img2 {
+}
+.img2 {
     @include parallax(.2);
     top: 451px;
     right: 352px;
-  }
-  .img3 {
-    @include parallax(.2);
-    top: 670px;
-    right: 104px;
-  }
-  .img4 {
+}
+.img3 {
+    @include parallax(0);
+    top: 695px;
+    right: 0px;
+}
+.img4 {
     @include parallax(.1);
     top: 500px;
     left: 500px;
-  }
-  .img5 {
+}
+.img5 {
     top: 0px;
     right: 43px;
-  }
-  .img6 {
-    @include parallax(.4);
-    top: 1180px;
-    left: 500px;
-  }
-  .img7 {
-    top: 1830px;
+}
+.img6 {
+    @include parallax(-2);
+    top: 260px;
+    left: -1085px;
+}
+.img7 {
+    top: 1910px;
     left: 0px;
-  }
-  .img8 {
+}
+.img8 {
     @include parallax(.4);
     top: 3585px;
     right: 239px;
-  }
-  .img9 {
+}
+.img9 {
     @include parallax(-1);
     top: 3700px;
-    left: 94px;
-  }
-  .img10 {
+    right: 920px;
+}
+.img10 {
     @include parallax(.2);
     top: 4600px;
     right: -2px;
-  }
-  .img11 {
+}
+.img11 {
     @include parallax(.2);
     top: 6341px;
     right: 86px;
-  }
-  .img12 {
+}
+.img12 {
     top: 7130px;
     left: 0px;
-  }
-  .img13 {
+}
+.img13 {
     @include parallax(.4);
-    top: 1710px;
+    top: 1790px;
     right: 630px;
-  }
+}
+.img14 {
+    @include parallax(.2);
+    top: 1000px;
+    right: 230px;
+}
   > * {
     position: absolute;
   }
 }
 
 body {
-  font-family: Roboto, sans-serif;
-  font-weight: 100;
   background: #5eb9e6;
-  line-height: 1;
 }
 
-h1, h2 {
-  font-weight: 100;
-  margin: 0;
+//Scroolling Lateral
+.menu { 
+    position: fixed; 
+    z-index: 3; 
+    top: calc( 50% - 72.5px ); 
+    left: 1em; 
+    width: 50px; 
+}
+.menu li { 
+    list-style: none; 
+    margin: 0 0 10px 0; 
+}
+.menu a.dot { 
+    width: 15px; 
+    height: 15px; 
+    padding: 0; 
+    border: 2px solid #FFF; 
+    content: " "; 
+    cursor: pointer; 
+    border-radius: 50%; 
+}
+.menu a.dot.active { 
+    background-color: #FFF; 
 }
 
-h1 {
-  font-size: 5em;
-  color: $primary;
+// Setas
+.arrow {
+    margin: 0 50%;
+    opacity: 1;
+    display: block;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
-h2 {
-  font-size: 3em;
-  @include parallax(.2);
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
 }
+
+// section1
+.section1{
+    padding: 347px 0 181px 0;
+    h1{
+        font-weight: 900 !important;
+        font-size: 6em !important;
+        line-height: 77px;
+        letter-spacing: -7px;
+        padding-left: 67px;
+    }
+    .seta1{
+        padding-top: 340px;
+    }
+}
+// section2
+.section2{
+    padding: 283px 0 101px 37px;
+    h2{
+        font-weight: 900 !important;
+        font-size: 3.7em !important;
+        line-height: 47px;
+        letter-spacing: -4px;
+        padding-bottom: 38px;
+    }
+    p{
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 70px;
+    }
+    h3{
+        font-weight: 900 !important;
+        font-size: 2.3em !important;
+        line-height: 47px;
+        letter-spacing: -2px;
+    }
+    .seta1{
+        padding: 105px 0;
+    }
+}
+// section2
+.section3{
+    padding: 300px 0 0 0;
+    h2{
+        font-weight: 900 !important;
+        font-size: 3.7em !important;
+        line-height: 47px;
+        letter-spacing: -4px;
+        padding-bottom: 38px;
+    }
+    p{
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 70px;
+    }
+    .btn1 {
+        color: #fff;
+        border: 3px solid #fff;
+        border-radius: 40px;
+        font-size: 1.6em;
+        padding: 20px 25px;
+    }
+
+    .btn1:hover {
+        color: #fff;
+        border: 3px solid #fff;
+        border-radius: 40px;
+        font-size: 1.6em;
+        padding: 20px 25px;
+    }
+}
+
+
