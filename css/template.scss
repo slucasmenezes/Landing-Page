@@ -46,14 +46,11 @@ $parallax-ios         : true !default;
   ) {
   transform:
     translateZ($distance * $perspective * 1px)
-    scale(abs($distance - 1))
-  ;
-  z-index: $distance * 1000;
+    scale(abs($distance - 1));
+  //z-index: $distance * 10;
 }
 
 // End of magic parallax mixins
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:100);
 $primary: #1586D1;
 
 body{
@@ -98,18 +95,18 @@ body{
     left: 0px;
 }
 .img8 {
-    @include parallax(.4);
-    top: 3585px;
-    right: 239px;
+    @include parallax(.1);
+    top: 3683px;
+    right: 59px;
 }
 .img9 {
-    @include parallax(-1);
-    top: 3700px;
-    right: 920px;
+    @include parallax(0);
+    top: 4054px;
+    right: 623px;
 }
 .img10 {
     @include parallax(.2);
-    top: 4600px;
+    top: 5060px;
     right: -2px;
 }
 .img11 {
@@ -131,13 +128,35 @@ body{
     top: 1000px;
     right: 230px;
 }
+.img15 {
+    @include parallax(.1);
+    top: 2750px;
+    right: 1168px;
+}
+.img16 {
+    @include parallax(.1);
+    top: 3401px;
+    right: 354px;
+}
+.img17 {
+    @include parallax(.2);
+    top: 3477px;
+    right: 479px;
+}
+.img18 {
+    @include parallax(.1);
+    top: 5384px;
+    right: 1903px;
+}
   > * {
     position: absolute;
   }
 }
 
 body {
-  background: #5eb9e6;
+  background-color: #5eb9e6;
+  //background-image: url("../img/fundo-final.png");
+
 }
 
 //Scroolling Lateral
@@ -240,7 +259,7 @@ body {
 }
 // section2
 .section3{
-    padding: 300px 0 0 0;
+    padding: 260px 0 183px 0;
     h2{
         font-weight: 900 !important;
         font-size: 3.7em !important;
@@ -260,13 +279,38 @@ body {
         font-size: 1.6em;
         padding: 20px 25px;
     }
-
     .btn1:hover {
         color: #fff;
         border: 3px solid #fff;
         border-radius: 40px;
         font-size: 1.6em;
         padding: 20px 25px;
+    }
+}
+//section4
+.section4{
+    padding: 267px 0 75px 178px;
+    h2{
+        font-weight: 900 !important;
+        font-size: 3.7em !important;
+        line-height: 47px;
+        letter-spacing: -4px;
+        padding-bottom: 38px;
+    }
+    p{
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 60px;
+        letter-spacing: -1px;
+    }
+    h3{
+        font-weight: 900 !important;
+        font-size: 2.3em !important;
+        line-height: 47px;
+        letter-spacing: -2px;
+    }
+    .seta1{
+        padding-bottom: 213px;
     }
 }
 
