@@ -6,10 +6,162 @@ h2 { color: #FFF; }
 h3{color: #ffffff;}
 p { color: #FFF; }
 
+// // Magic parallax mixins
+// $parallax-perspective : 1 !default;
+// $parallax-element     : "body" !default;
+// $parallax-ios         : true !default;
+
+// @mixin parallax-init(
+//   $perspective  : $parallax-perspective,
+//   $element      : $parallax-element,
+//   $parallax-ios : $parallax-ios
+//   ) {
+//   @if $element == "body" {
+//     html, body {
+//       width: 100%;
+//       height: 100%;
+//       margin: 0;
+//       padding: 0;
+//       overflow: hidden;
+//     }
+//   }
+//   #{$element} {
+//     overflow: auto;
+//     perspective: $perspective * 1px;
+//     transform-style: preserve-3d;
+//     // Allows for smooth scrolling but disables parallax effects.
+//     @if $parallax-ios == false {
+//       -webkit-overflow-scrolling: touch;
+//     }
+//     // Preserve 3D
+//     &, * {
+//       transform-style: preserve-3d;
+//     }
+//   }
+// }
+
+// @mixin parallax(
+//   $distance    : 0,
+//   $perspective : $parallax-perspective
+//   ) {
+//   transform:
+//     translateZ($distance * $perspective * 1px)
+//     scale(abs($distance - 1));
+//   //z-index: $distance * 10;
+// }
+
+// // End of magic parallax mixins
+// $primary: #1586D1;
+
+// body{
+//     margin: 0;
+//     padding: 0;
+//     position: relative;
+// }
+
+// @include parallax-init;
+
+// .parallax-fluid {
+//   .img1 {
+//     top: 0px;
+//     left: 0px;
+// }
+// .img2 {
+//     @include parallax(.2);
+//     top: 451px;
+//     right: 352px;
+// }
+// .img3 {
+//     @include parallax(0);
+//     top: 695px;
+//     right: 0px;
+// }
+// .img4 {
+//     @include parallax(.1);
+//     top: 500px;
+//     left: 500px;
+// }
+// .img5 {
+//     top: 0px;
+//     right: 43px;
+// }
+// .img6 {
+//     @include parallax(-2);
+//     top: 260px;
+//     left: -1085px;
+// }
+// .img7 {
+//     top: 1910px;
+//     left: 0px;
+// }
+// .img8 {
+//     @include parallax(.1);
+//     top: 3683px;
+//     right: 59px;
+// }
+// .img9 {
+//     @include parallax(.1);
+//     top: 4085px;
+//     right: 576px;
+// }
+// .img10 {
+//     @include parallax(.2);
+//     top: 5060px;
+//     right: -2px;
+// }
+// .img11 {
+//     @include parallax(.2);
+//     top: 6341px;
+//     right: 86px;
+// }
+// .img12 {
+//     top: 7130px;
+//     left: 0px;
+// }
+// .img13 {
+//     @include parallax(.4);
+//     top: 1790px;
+//     right: 630px;
+// }
+// .img14 {
+//     @include parallax(.2);
+//     top: 1000px;
+//     right: 230px;
+// }
+// .img15 {
+//     @include parallax(.1);
+//     top: 2750px;
+//     right: 1168px;
+// }
+// .img16 {
+//     @include parallax(.1);
+//     top: 3401px;
+//     right: 354px;
+// }
+// .img17 {
+//     @include parallax(.2);
+//     top: 3477px;
+//     right: 479px;
+// }
+// .img18 {
+//     @include parallax(0);
+//     top: 4884px;
+//     left: 0px;
+// }
+// .img19 {
+//     @include parallax(.3);
+//     top: 4434px;
+//     right: 640px;
+// }
+//   > * {
+//     position: absolute;
+//   }
+// }
+
 body {
   background-color: #5eb9e6;
   background-image: url("../img/fundo-final.png");
-  overflow-x: hidden;
+
 }
 
 //Scroolling Lateral
@@ -71,8 +223,6 @@ body {
     }
 }
 
-
-
 //section1
 .section1{
     padding: 347px 0 181px 0;
@@ -89,7 +239,7 @@ body {
 }
 //section2
 .section2{
-    padding: 283px 0 69px 37px;
+    padding: 283px 0 101px 37px;
     h2{
         font-weight: 900 !important;
         font-size: 3.7em !important;
@@ -114,7 +264,7 @@ body {
 }
 //section3
 .section3{
-    padding: 240px 0 203px 0;
+    padding: 260px 0 183px 0;
     h2{
         font-weight: 900 !important;
         font-size: 3.7em !important;
@@ -141,22 +291,10 @@ body {
         font-size: 1.6em;
         padding: 20px 25px;
     }
-    .video1{
-        height: 58%;
-        width: 88%;
-        z-index: 2;
-        margin-top: 55px;
-    }
-    .fundolives{
-        position: relative;
-        top: -288px;
-        left: 13px;
-        z-index: 1;
-    }
 }
 //section4
 .section4{
-    padding: 267px 0 288px 0;
+    padding: 267px 0 288px 178px;
     h2{
         font-weight: 900 !important;
         font-size: 3.7em !important;
@@ -175,18 +313,6 @@ body {
         font-size: 2.3em !important;
         line-height: 47px;
         letter-spacing: -2px;
-    }
-    .video2{
-        height: 69%;
-        width: 88%;
-        z-index: 2;
-        margin: 2px 0 0 78px;
-    }
-    .fundoeventos{
-        position: relative;
-        top: -289px;
-        right: -86px;
-        z-index: 1;
     }
 }
 //section5
