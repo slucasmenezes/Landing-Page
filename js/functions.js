@@ -29,6 +29,12 @@ jQuery(document).ready(function(){
       $('.waveAnima').css({'display': 'block','float': 'left'});
       $('.circleDotsAnima').addClass('animated zoomIn anima-1');
       $('.circleDotsAnima').css({'display': 'block','float': 'left'});
+      $('.mapMarkerAnima').addClass('animated rollIn anima-1');
+      $('.mapMarkerAnima').css({'display': 'block','float': 'left'});
+      $('.video01Anima').addClass('animated rotateInDownLeft anima-6');
+      $('.video01Anima').css({'display': 'block','float': 'left'});
+      $('.dotsPage03Anima').addClass('animated rotateInDownRight anima-6');
+      $('.dotsPage03Anima').css({'display': 'block','float': 'left'});
     
       if(y > 750){ 
         $('.cheeseAnima').addClass('animated bounceInDown anima-1');
