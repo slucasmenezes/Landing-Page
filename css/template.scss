@@ -71,7 +71,78 @@ body {
     }
 }
 
+.anima-1 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-iteration-count: 1;
+}
 
+.anima-2 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1.0s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.anima-3 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.anima-4 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2.0s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.anima-5 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2.5s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.anima-7 {
+    margin: 0 50%;
+    opacity: 1;
+    display: block;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: jello 1s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    position: absolute;
+    top: 4860px;
+    left: 80px;
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+
+.cheeseAnima, .circleAnima, .photo01Anima, .dotsPage03Anima, .triangleAnima, 
+.circleDotsAnima, .circleWavesAnima, .mapMarkerAnima {
+    display: none;
+    position: absolute;
+}
 
 //section1
 .section1{
@@ -85,6 +156,16 @@ body {
     }
     .seta1{
         padding-top: 340px;
+    }
+    .imagecirclesAnima{
+        position: absolute;
+        top: 0;
+        left: 408px;
+    }
+    .circleAnima{
+        position: absolute;
+        top: 469px;
+        right: 220px;
     }
 }
 //section2
@@ -110,6 +191,25 @@ body {
     }
     .seta1{
         padding: 105px 0;
+    }
+    .cheeseAnima{
+        position: absolute;
+        top: 1092px;
+        left: 256px;
+    }
+    .photo01Anima{ 
+        top: 1090px;
+        right: 490px;
+        z-index: 2;
+    }
+    .dotsPage03Anima{
+        top: 934px;
+        right: 125px;
+        z-index: 1;
+    }
+    .triangleAnima{
+        top: 1974px;
+        right: 460px;
     }
 }
 //section3
@@ -153,10 +253,14 @@ body {
         left: 13px;
         z-index: 1;
     }
+    .circleWavesAnima{
+        top: 2772px;
+        left: 41px;
+    }
 }
 //section4
 .section4{
-    padding: 267px 0 288px 0;
+    padding: 224px 0 288px 0;
     h2{
         font-weight: 900 !important;
         font-size: 3.7em !important;
@@ -188,10 +292,14 @@ body {
         right: -86px;
         z-index: 1;
     }
+    .circleDotsAnima{
+        top: 3378px;
+        right: 285px;
+    }
 }
 //section5
 .section5{
-    padding: 400px 0 425px 0;
+    padding: 387px 0 278px 0;
     h2{
         font-weight: 900 !important;
         font-size: 3.7em !important;
@@ -210,11 +318,18 @@ body {
         font-size: 2.3em !important;
         line-height: 47px;
         letter-spacing: -2px;
+    }
+    .seta1{
+        padding-top: 110px;
+    }
+    .mapMarkerAnima{
+        top:4416px;
+        right: 586px;
     }
 }
 //section6
 .section6{
-    padding: 400px 0 425px 0;
+    padding: 250px 0 184px 0;
     h2{
         font-weight: 900 !important;
         font-size: 3.7em !important;
@@ -228,16 +343,35 @@ body {
         padding-bottom: 60px;
         letter-spacing: -1px;
     }
-    h3{
-        font-weight: 900 !important;
-        font-size: 2.3em !important;
-        line-height: 47px;
-        letter-spacing: -2px;
+    .photo02{
+        position: absolute;
+        left: 341px;
+        top: -7px;
+    }
+    .nove{
+        color: #f8a963;
+        font-size: 18em;
+        font-weight: 900;
+        position: absolute;
+        top: -75px;
+        right: 576px;
+    }
+    .bilhoes{
+        color: #fff;
+        font-size: 7.5em;
+        font-weight: 900;
+        position: absolute;
+        top: 120px;
+        right: 282px;
+        letter-spacing: -6px;
+    }
+    .seta1{
+        padding-top: 370px;
     }
 }
 //section7
 .section7{
-    padding: 400px 0 425px 0;
+    padding: 105px 0 425px 0;
     h2{
         font-weight: 900 !important;
         font-size: 3.7em !important;
@@ -250,12 +384,6 @@ body {
         line-height: 28px;
         padding-bottom: 60px;
         letter-spacing: -1px;
-    }
-    h3{
-        font-weight: 900 !important;
-        font-size: 2.3em !important;
-        line-height: 47px;
-        letter-spacing: -2px;
     }
     .cycle-slideshow {
         width: 100% !important;

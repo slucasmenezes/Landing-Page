@@ -27,14 +27,7 @@ jQuery(document).ready(function(){
       $('.imagecirclesAnima').css({'display': 'block','float': 'left'});
       $('.waveAnima').addClass('animated lightSpeedIn anima-1');
       $('.waveAnima').css({'display': 'block','float': 'left'});
-      $('.circleDotsAnima').addClass('animated zoomIn anima-1');
-      $('.circleDotsAnima').css({'display': 'block','float': 'left'});
-      $('.mapMarkerAnima').addClass('animated rollIn anima-1');
-      $('.mapMarkerAnima').css({'display': 'block','float': 'left'});
-      $('.video01Anima').addClass('animated rotateInDownLeft anima-6');
-      $('.video01Anima').css({'display': 'block','float': 'left'});
-      $('.dotsPage03Anima').addClass('animated rotateInDownRight anima-6');
-      $('.dotsPage03Anima').css({'display': 'block','float': 'left'});
+      
     
       if(y > 750){ 
         $('.cheeseAnima').addClass('animated bounceInDown anima-1');
@@ -49,20 +42,36 @@ jQuery(document).ready(function(){
         $('.chamadaAnima4').css({'display': 'block','float': 'left'});
         $('.chamadaAnima5').addClass('animated fadeInUp anima-5');      
         $('.chamadaAnima5').css({'display': 'block','float': 'left'});
+        $('.photo01Anima').addClass('animated rotateInDownLeft anima-6');
+        $('.photo01Anima').css({'display': 'block','float': 'left'});
+        $('.dotsPage03Anima').addClass('animated rotateInDownRight anima-6');
+        $('.dotsPage03Anima').css({'display': 'block','float': 'left'});
+        $('.triangleAnima').addClass('animated bounceInUp anima-1');
+        $('.triangleAnima').css({'display': 'block','float': 'left'});
       }
   
-      if(y > 2000){ 
+      if(y > 1500){ 
+        $('.circleWavesAnima').addClass('animated bounceIn anima-1');
+        $('.circleWavesAnima').css({'display': 'block','float': 'left'});
+               
+      }
+      if (y > 2250) {
+        $('.circleDotsAnima').addClass('animated zoomIn anima-1');
+        $('.circleDotsAnima').css({'display': 'block','float': 'left'});
         $('.eventosAnima1').addClass('animated fadeInUp anima-1');
         $('.eventosAnima1').css({'display': 'block','float': 'left'});
         $('.eventosAnima2').addClass('animated fadeInUp anima-2');
         $('.eventosAnima2').css({'display': 'block','float': 'left'});
         $('.eventosAnima3').addClass('animated fadeInUp anima-3');
         $('.eventosAnima3').css({'display': 'block','float': 'left'});
-        $('.eventosAnima4').addClass('animated fadeInUp anima-4');
-        $('.eventosAnima4').css({'display': 'block','float': 'left'});
-        $('.eventosAnima5').addClass('animated fadeInUp anima-5');
-        $('.eventosAnima5').css({'display': 'block','float': 'left'});
-               
+      } 
+      if (y > 3500) {
+        $('.mapMarkerAnima').addClass('animated rollIn anima-1');
+        $('.mapMarkerAnima').css({'display': 'block','float': 'left'});
+        $('.beeAnima').addClass('animated fadeInUp anima-1');
+        $('.beeAnima').css({'display': 'block'});
+        $('.c21Anima').addClass('animated fadeInUp anima-2');
+        $('.c21Anima').css({'display': 'block'});
       } 
     }
   
