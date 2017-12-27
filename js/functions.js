@@ -18,7 +18,7 @@ jQuery(document).ready(function(){
   
     function animaBox(){
       var y = $(window).scrollTop();
-      console.log(y);
+      //console.log(y);
 
       
       $('.circleAnima').addClass('animated bounceInUp anima-1');
@@ -73,15 +73,32 @@ jQuery(document).ready(function(){
         $('.c21Anima').addClass('animated fadeInUp anima-2');
         $('.c21Anima').css({'display': 'block'});
       } 
+      if (y > 4500){
+        $('.triangleDotsAnima').addClass('animated bounceInDown anima-1');
+        $('.triangleDotsAnima').css({'display': 'block','float': 'left'});
+        $('.moneyAnima').addClass('animated zoomIn anima-2');
+        $('.moneyAnima').css({'display': 'block','float': 'left'});
+        $('.triangle02Anima').addClass('animated bounceInUp anima-3');
+        $('.triangle02Anima').css({'display': 'block','float': 'left'});
+      }
+      if (y > 6000) {
+        $('.circlePattern02Anima').addClass('animated fadeInLeft anima-1');
+        $('.circlePattern02Anima').css({'display': 'block','float': 'left'});
+      }
+      if (y > 7000) {
+        $('.circle02Anima').addClass('animated bounceInDown anima-1'); 
+        $('.circle02Anima').css({'display': 'block','float': 'left'});
+        $('.circleDots02Anima').addClass('animated zoomIn anima-2');
+        $('.circleDots02Anima').css({'display': 'block','float': 'left'});
+        $('.circleWaves02Anima').addClass('animated bounceIn anima-3');
+        $('.circleWaves02Anima').css({'display': 'block','float': 'left'});
+      }
     }
   
       window.onscroll=function(){
       animaBox();  
     };
-    animaBox();
-  
-  
-  
+    animaBox(); 
   
   }); 
 

@@ -9,6 +9,8 @@ p { color: #FFF; }
 body {
   background-color: #5eb9e6;
   background-image: url("../img/fundo-final.png");
+  background-position: top center;
+  background-repeat: no-repeat;
   overflow-x: hidden;
 }
 
@@ -111,7 +113,7 @@ body {
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
     position: absolute;
-    top: 4860px;
+    top: 4808px;
     left: 80px;
 }
 
@@ -139,7 +141,9 @@ body {
 
 
 .cheeseAnima, .circleAnima, .photo01Anima, .dotsPage03Anima, .triangleAnima, 
-.circleDotsAnima, .circleWavesAnima, .mapMarkerAnima {
+.circleDotsAnima, .circleWavesAnima, .mapMarkerAnima, .circlePattern02Anima, 
+.circleWaves02Anima, .circleDots02Anima, .circle02Anima, .triangleDotsAnima,
+.moneyAnima, .triangle02Anima {
     display: none;
     position: absolute;
 }
@@ -368,36 +372,138 @@ body {
     .seta1{
         padding-top: 370px;
     }
+    .triangleDotsAnima{
+        top: 5570px;
+        right: 170px;
+    }
+    .moneyAnima{
+        top: 5794px;
+        left: 571px;        
+        z-index: 3;
+    }
+    .triangle02Anima{
+        top: 6230px;
+        right: 625px;
+    }
 }
 //section7
 .section7{
-    padding: 105px 0 425px 0;
+    padding: 184px 0 152px 0;
     h2{
         font-weight: 900 !important;
         font-size: 3.7em !important;
         line-height: 47px;
         letter-spacing: -4px;
         padding-bottom: 38px;
+        padding-left: 180px;
     }
     p{
         font-size: 24px;
         line-height: 28px;
-        padding-bottom: 60px;
+        padding-bottom: 90px;
         letter-spacing: -1px;
+        padding-left: 320px;
     }
     .cycle-slideshow {
         width: 100% !important;
+        padding-bottom: 50px;
+    }
+    .circlePattern02Anima{
+        left: 0;
+        top: 6614px;
+    }
+}
+
+//section8
+.section8{
+    padding: 184px 0 300px 0;
+    h2{
+        font-weight: 900 !important;
+        font-size: 3.7em !important;
+        line-height: 47px;
+        letter-spacing: -4px;
+        padding: 175px 0 38px 197px;
+    }
+    p{
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1px;
+        padding: 0 0 230px 197px;
+    }
+    .circle02Anima{
+        left: 41%;
+        top: 7634px;
+    }
+    .circleDots02Anima{
+        left: 40px;
+        top: 7674px;
+    }
+    .waves02 {
+        margin: 0 50%;
+        opacity: 1;
+        display: block;
+        z-index: 2;
+        -webkit-animation: bounce 2s infinite 2s;
+        animation: jello 1s infinite 2s;
+        -webkit-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+        position: absolute;
+        top: 7630px;
+        right: 135px;
+    }
+
+    @keyframes bounce {
+        0%,
+        100%,
+        20%,
+        50%,
+        80% {
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+        60% {
+            -webkit-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+        }
+    }
+    .circleWaves02Anima{
+        right: 351px;
+        top: 7974px;
     }
 }
 
 //section9
 .section9{
+    padding: 92px 0 103px 0;
+    h2{
+        font-weight: 900 !important;
+        font-size: 3.5em;
+        line-height: 47px;
+        letter-spacing: -4px;
+        padding: 0 0 23px 0;
+    }
+    p{
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1px;
+        padding: 0 0 45px 0;
+    }
+    .form-group{
+        margin-bottom: 1.8em !important;
+    }
     .form-control-style {
         color: #979797;
-        border: 2px solid #fff;
-        border-radius: 35px;
-        font-size: 1.2em;
-        height: 50px !important;
+        border: none;
+        border-radius: 45px;
+        font-size: 1.5em;
+        padding: 27px 40px;
     }
 
     .form-control:focus {
@@ -405,17 +511,523 @@ body {
         webkit-box-shadow: 0 0 0 0.2rem rgba(248, 169, 99, 0.25);
         box-shadow: 0 0 0 0.2rem rgba(248, 169, 99, 0.25);
     }
-
+    select.form-control:not([size]):not([multiple]){
+        height: 100%;
+        padding: 27px;
+    }
     #Select1 { 
         color: #5eb9e6;
     }
 
-    .btn-style {
+    .btn2-style {
         background-color: #f8a963;
         color: #fff;
         border: none;
-        border-radius: 35px;
-        font-size: 1em;
+        border-radius: 45px;
+        font-size: 1.5em;
         width: 100%;
+        padding: 25px;
+    }
+    .sejaingaia{
+        padding-bottom: 50px;
     }
 }
+.conversion-somosingaia-ae721437008e98cd77e0{
+    background-color: none !important;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    cursor: pointer;
+
+}
+
+.selectItem:after {
+    content: "\E017";
+    font-family: 'ingaia-font-icons';
+    font-size: 18px;
+    color: #f8a963;
+    z-index: 999999;
+    position: absolute;
+    top: 28px;
+    right: 50px;
+    pointer-events: none;    
+}
+
+// Medias
+@media (max-width: 1366px) {
+    .section1{
+        padding: 347px 0 441px 0 !important;
+        h1{
+            padding: 0;
+        }
+        .seta1{
+            padding-top: 80px;
+        }
+        .imagecirclesAnima {
+            left: 110px;
+        }
+        .circleAnima{
+            right: -67px;
+        }
+    }
+    .section2{
+        padding: 105px 0 441px 0 !important;
+        h1{
+            padding: 0 !important;
+        }
+        p{
+            font-size: 20px !important;
+        }
+        .seta1{
+            padding-top: 50px !important;
+        }
+        .cheeseAnima{
+            left: 75px !important;
+        }
+        .photo01Anima{
+            top: 1015px !important;
+            right: 120px !important;
+        }
+        .dotsPage03Anima{
+            top: 905px !important;
+            right: -175px !important;
+        }
+    }
+    .section3{
+        padding: 40px 0 490px 0 !important;
+        p{
+            padding-bottom: 15px !important;
+        }
+        .circleWavesAnima{
+            top: 2792px !important;
+            left: -140px !important;
+        }
+    }
+    .section4{
+        padding: 75px 0 288px 0;
+        p{
+            font-size: 20px !important;
+        }
+        .fundoeventos{
+            right: -166px;
+        }
+        .circleDotsAnima{
+            top: 3628px !important;
+            right: 55px !important;
+        }
+    }
+    .section5{
+        padding: 237px 0 628px 0 !important;
+        .mapMarkerAnima{
+            top: 4400px !important;
+            right: 305px !important;
+        }
+        .anima-7{
+            top: 4898px !important;
+            left: 210px !important;
+        }
+    }
+    .section6{
+        padding: 40px 0 290px 0 !important;
+        .photo02{
+            left: 90px !important;
+        }
+        .nove{
+            right: 398px !important;
+        }
+        .bilhoes{
+            right: 108px !important;
+        }
+        .moneyAnima{
+            top: 5854px !important;
+            left: 256px !important;
+        }
+        .triangleDotsAnima{
+            right: 0 !important;
+        }
+        .triangle02Anima{
+            top: 6310px !important;
+            right: 315px !important;
+        }
+    }
+    .section7{
+        padding: 50px 0 325px 0 !important;
+        p{
+            padding-bottom: 30px !important;
+        }
+        .cycle-slideshow{
+            padding-bottom: 0px !important;
+        }
+        .circlePattern02Anima{
+            left: -231px;
+            top: 6894px;
+        }
+    }
+    .section8{
+        padding: 45px 0 418px 0 !important;
+        p{
+            padding-bottom: 80px !important;
+        }
+        .circleWaves02Anima{
+            right: -20px !important;
+        }
+        .waves02{
+            top: 7590px !important;
+            left: -55px !important;
+        }
+    }
+    .section9{
+        padding: 13px 0 60px 0 !important;
+        h2{
+            font-size: 3.2em !important;
+        }
+        p{
+            padding-bottom: 30px !important;
+        }
+        .sejaingaia{
+            padding-bottom: 30px !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .section1{
+        padding: 250px 0 441px 0 !important;
+    }
+    .section2{
+        padding: 25px 0 441px 0 !important;
+        h2{
+            padding-bottom: 15px !important;
+        }
+        p{
+            font-size: 17px !important;
+            padding-bottom: 0 !important;
+        }
+        .photo01Anima, .dotsPage03Anima{
+            display: none !important;
+        }
+        .cheeseAnima{
+            left: 20px !important;
+        }
+        .seta01{
+            padding-top: 25px !important;
+        }
+    }
+    .section3{
+        padding: 40px 0 250px 0 !important;
+        p{
+            font-size: 17px !important;
+        }
+        .video1{
+            margin-top:45px !important;
+        }
+        .seta1 {
+            padding-top: 60px !important;
+        }
+        .circleWavesAnima{
+            display: none !important;
+        }
+    }
+    .section4{
+        padding: 75px 0 90px 0 !important;
+        .video2{
+            margin: 0 !important;
+        }
+        .fundoeventos{
+            right: 2px !important;
+        }
+        .circleDotsAnima{
+            top: 3988px !important; 
+            right: 25px !important;
+        }
+    }
+    .section5{
+        padding: 100px 0 628px 0 !important;
+        .mapMarkerAnima{
+            display: none !important;
+        }
+    }
+    .section6{
+        padding: 20px 0 290px 0 !important;
+        h2{
+            padding-bottom: 18px !important;
+        }
+        p{
+            padding-bottom: 20px !important;
+        }
+        .nove{
+            right: 320px !important;
+            top: 60px !important;
+        }
+        .bilhoes{
+            right: 20px !important;
+            top: 240px !important;
+        }
+        .seta1{
+            padding-top: 410px !important;
+        }
+        .triangleDotsAnima, .triangle02Anima, .moneyAnima {
+            display: none !important;
+        }
+    }
+    .section7{
+        padding: 15px 0 325px 0 !important;
+        .circlePattern02Anima{
+            display: none !important;
+        }
+    }
+    .section8{
+        h2{
+            padding: 95px 0 38px 197px !important;
+        }
+        .circleWaves02Anima{
+            display: none !important;
+        }
+    }
+    .section9{
+        h2{
+            font-size: 2.5em !important;
+        }
+        p{
+            padding: 0 0 25px 0 !important;
+        }
+        .form-control-style{
+            font-size: 1em !important;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section1{
+        padding: 250px 0 441px 0 !important;
+    }
+    .section2{
+        padding: 25px 0 441px 0 !important;
+        h2{
+            padding-bottom: 15px !important;
+        }
+        p{
+            font-size: 17px !important;
+            padding-bottom: 0 !important;
+        }
+        .photo01Anima, .dotsPage03Anima{
+            display: none !important;
+        }
+        .cheeseAnima{
+            display: none !important;
+        }
+        .seta01{
+            padding-top: 25px !important;
+        }
+    }
+    .section3{
+        padding: 40px 0 250px 0 !important;
+        p{
+            font-size: 17px !important;
+        }
+        .video1{
+            margin-top:45px !important;
+        }
+        .seta1 {
+            padding-top: 60px !important;
+        }
+        .circleWavesAnima{
+            display: none !important;
+        }
+    }
+    .section4{
+        h2, p {
+            padding-left: 70px !important;
+        }
+        padding: 75px 0 90px 0 !important;
+        .video2{
+            margin: 0 0 0 60px !important;
+        }
+        .fundoeventos{
+            right: -98px !important;
+        }
+        .circleDotsAnima{
+            top: 3988px !important; 
+            right: 25px !important;
+        }
+    }
+    .section5{
+        padding: 100px 0 628px 0 !important;
+        .mapMarkerAnima{
+            display: none !important;
+        }
+    }
+    .section6{
+        padding: 20px 0 290px 0 !important;
+        h2{
+            padding-bottom: 18px !important;
+        }
+        p{
+            padding-bottom: 20px !important;
+        }
+        .nove{
+            right: 320px !important;
+            top: 60px !important;
+        }
+        .bilhoes{
+            right: 20px !important;
+            top: 240px !important;
+        }
+        .seta1{
+            padding-top: 410px !important;
+        }
+        .triangleDotsAnima, .triangle02Anima, .moneyAnima {
+            display: none !important;
+        }
+    }
+    .section7{
+        padding: 15px 0 325px 0 !important;
+        .circlePattern02Anima{
+            display: none !important;
+        }
+    }
+    .section8{
+        h2{
+            padding: 95px 0 38px 197px !important;
+        }
+        .circle02Anima {
+            top: 7530px;
+        }
+        .circleDots02Anima {
+            left: -25px;
+        }
+        .circleWaves02Anima{
+            display: none !important;
+        }
+    }
+    .section9{
+        h2{
+            font-size: 2.5em !important;
+        }
+        p{
+            padding: 0 0 25px 0 !important;
+        }
+        .form-control-style{
+            font-size: 1em !important;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .section1{
+        padding: 307px 0 441px 0 !important;
+    }
+    .section2{
+        .photo01Anima{
+            right: -60px !important;
+            top: 985px !important;
+        }
+        .dotsPage03Anima{
+            right: -380px !important;
+        }
+        .cheeseAnima{
+            left: 15px !important;
+        }
+    }
+    .section3 {
+        padding: 3px 0 490px 0 !important;
+        .fundolives{
+            left: 71px !important;
+        }
+    }
+    .section4{
+        h2{
+            padding-left: 30px !important;
+        }
+        p{
+            font-size: 17px !important;
+            padding-left: 30px !important;
+        }
+        .feiras{
+            padding-left: 45px !important;
+        }
+    }
+    .section5 {
+        padding: 217px 0 628px 0 !important;
+        .mapMarkerAnima{
+            top: 4330px !important;
+            right: 215px !important;
+        }
+    }
+    .section6 {
+        .triangleDotsAnima{
+            right: -150px !important;
+        }
+        .moneyAnima{
+            left: 240px !important;
+        }
+        .nove{
+            right: 258px !important;
+        }
+        .bilhoes{
+            font-size: 7em !important;
+            right: -2px;
+        }
+    }
+    .section8{
+        .circleDots02Anima{
+            left: -10px !important;
+        }
+        .circleWaves02Anima{
+            right: -280px !important;
+        }
+    }
+    .section9{
+        h2{
+            font-size: 3em !important;
+        }
+        p{
+            line-height: 5px !important;
+        }
+    }   
+}
+@media (max-width: 575px) {
+    .section1{
+        h1{
+            padding-left: 45px !important;
+        }
+    }
+    .section2{
+        h2, p{
+            padding-left: 60px !important;
+        }
+        .produtos{
+            padding-left: 60px !important;   
+        }
+    }
+    .section3{
+        h2, p{
+            padding-left: 60px !important;
+        }
+    }
+    .section4{
+        h2, p{
+            padding-left: 60px !important;
+        }
+        .circleDotsAnima{
+            display: none !important;
+        }
+        .feiras{
+            padding-left: 60px !important;
+        }
+    }
+    .section7{
+        p{
+            padding-left: 210px !important;
+        }
+    }
+    .section8{
+        .waves02{
+            display: none !important;
+        }
+    }
+}
+
