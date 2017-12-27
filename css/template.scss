@@ -1031,3 +1031,98 @@ select {
     }
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    #navbar1{
+        display: none;
+    }
+    .section1{
+        padding: 180px 0 200px 0 !important;
+        h1{
+            padding-left: 45px !important;
+            font-size: 4em !important;
+        }
+    }
+    .section2{
+        padding: 25px 0 200px 0 !important;
+        h2{
+            padding-left: 20px !important;
+            font-size: 2.7em !important;
+        }
+        p{
+            padding-left: 20px !important;
+        }
+        .produtos{
+            padding-left: 20px !important; 
+        }
+        .produto1{
+            padding-bottom: 20px !important;
+        }
+    }
+    .section3{
+        h2{
+            font-size: 2.7em !important;
+        }
+        h2, p{
+            padding-left: 20px !important;
+        }
+        .btn1, .btn1:hover{
+            font-size: 1.2em !important;
+        }
+    }
+    .section4{
+        h2, p{
+            padding-left: 20px !important;
+        }
+        .circleDotsAnima{
+            display: none !important;
+        }
+        .feiras{
+            padding-left: 20px !important;
+        }
+    }
+    .section5{
+        padding: 30px 0 200px 0 !important;
+        .seta1{
+            padding-top: 30px !important;
+        }
+    }
+    .section6{
+        h2{
+            font-size: 3em !important;
+        }
+        .nove{
+            right: 200px !important;
+            font-size: 15em !important;
+        }
+        .bilhoes{
+            font-size: 5.5em !important;
+        }
+    }
+    .section7{
+        padding: 15px 0 325px 0 !important;
+        h2 {
+            padding-left: 0 !important
+            
+        }
+        p{
+            padding-left: 55px !important;
+        }
+    }
+    .section8{
+        h2 {
+            padding: 25px 0 38px 20px !important;
+        }
+        p {
+            padding: 0 0 10px 20px !important;
+        }
+        .waves02{
+            display: none !important;
+        }
+    }
+    .section9{
+        h2{
+            font-size: 3em !important;
+        }
+    }
+
+}
