@@ -481,7 +481,7 @@ body {
 
 //section9
 .section9{
-    padding: 92px 0 103px 0;
+    padding: 92px 0 0px 0;
     h2{
         font-weight: 900 !important;
         font-size: 3.5em;
@@ -598,6 +598,10 @@ select {
     }
     .section3{
         padding: 40px 0 490px 0 !important;
+        .video1 {
+            width: 125% !important;
+            right: 140px !important;
+        }
         p{
             padding-bottom: 15px !important;
         }
@@ -608,6 +612,11 @@ select {
     }
     .section4{
         padding: 75px 0 288px 0;
+        .video2 {
+            height: 64% !important;
+            width: 120% !important;
+            margin: 2px 0 0 22px !important;
+        }
         p{
             font-size: 20px !important;
         }
@@ -680,7 +689,7 @@ select {
         }
     }
     .section9{
-        padding: 13px 0 60px 0 !important;
+        padding: 13px 0 0px 0 !important;
         h2{
             font-size: 3.2em !important;
         }
@@ -1125,4 +1134,126 @@ select {
         }
     }
 
+}
+
+@media (min-width: 1367px) and (max-width: 1440px) {
+    .section1{
+        padding: 347px 0 291px 0 !important;
+        h1{
+            padding-left: 27px !important;
+        }
+        .circleAnima{
+            right: -30px !important;
+        }
+        .seta1{
+            padding-top: 230px !important;
+        }
+    }
+    .section2{
+        padding: 200px 0 174px 27px !important;
+        .cheeseAnima{
+            left: 169px !important;
+        }
+        .photo01Anima{
+            right: 80px !important;
+        }
+        .dotsPage03Anima{
+            right: -205px !important;
+        }
+        .seta1{
+            padding: 85px 0 105px 0 !important;
+        }
+    }
+    .section3 {
+        padding: 145px 0 270px 0 !important;
+        p{
+            font-size: 22px !important;
+        }
+        .circleWavesAnima{
+            left: -100px !important;
+        }
+        .video1 {
+            height: 59% !important;
+            width: 125% !important;
+            right: 140px !important;
+        }
+    }
+    .section4{
+        padding: 224px 0 288px 0 !important;
+        .circleDotsAnima{
+            right: 135px !important;
+        }
+        p{
+            font-size: 23px !important;
+        }
+        .video2 {
+            height: 72% !important;
+            width: 113% !important;
+            z-index: 2 !important;
+            margin: 2px 0 0 59px !important;
+        }
+        .fundoeventos{
+            right: -191px !important;
+        }
+    }
+    .section5 {
+        .mapMarkerAnima{
+            right: 336px !important;
+        }
+        .anima-7{
+            top: 4828px !important;
+            left: 50px !important;
+        }
+    }
+    .section6 {
+        padding: 180px 0 254px 0 !important;
+        .triangleDotsAnima {
+            top: 5476px !important;
+            right: 10px !important;
+        }
+        .triangle02Anima {
+            top: 6277px !important;
+            right: 425px !important;
+        }
+        .moneyAnima {
+            top: 5698px !important;
+            left: 321px !important;
+        }
+        .photo02 {
+            left: 112px !important;
+        }
+        .nove {
+            right: 376px !important;
+        }
+        .bilhoes {
+            right: 100px !important;
+        }
+    }
+    .section7 {
+        padding: 75px 0 261px 0 !important;
+        .circlePattern02Anima{
+            left: -270px !important;
+        }
+    }
+    .section8 {
+        padding: 165px 0 280px 0 !important;
+        p{
+            font-size: 22px !important;
+            padding: 0 0 150px 197px !important;
+        }
+        .waves02{
+            top: 7570px !important;
+            right: -85px !important;
+
+        }
+        .circleDots02Anima {
+            left: 60px !important;
+        }
+        .circleWaves02Anima {
+            right: 0px !important;
+        }
+    }
+    .section9 {
+        padding: 20px 0 0 0 !important;
+    }
 }
