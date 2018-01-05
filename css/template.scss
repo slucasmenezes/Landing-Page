@@ -557,7 +557,7 @@ select {
 }
 
 // Medias
-@media (max-width: 1366px) {
+@media (min-width: 1200px) and (max-width: 1366px) {
     .section1{
         padding: 347px 0 441px 0 !important;
         h1{
@@ -999,6 +999,7 @@ select {
     }   
 }
 @media (max-width: 575px) {
+
     .section1{
         h1{
             padding-left: 45px !important;
@@ -1040,89 +1041,152 @@ select {
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) and (min-width: 320px) {
+    .seta1 {
+        display: none !important;
+    }
     #navbar1{
         display: none;
     }
     .section1{
         padding: 180px 0 200px 0 !important;
+        .imagecirclesAnima {
+            top: 0px !important;
+            left: 60px !important;
+        }
         h1{
-            padding-left: 45px !important;
+            padding-left: 15px !important;
             font-size: 4em !important;
+        }
+        p{
+            font-size: 22px !important;
         }
     }
     .section2{
         padding: 25px 0 200px 0 !important;
         h2{
-            padding-left: 20px !important;
-            font-size: 2.7em !important;
+            padding-left: 0 !important;
+            font-size: 2.5em !important;
+        }
+        h3{ 
+            font-size: 2em !important;
         }
         p{
-            padding-left: 20px !important;
+            padding-left: 15px !important;
+            font-size: 22px !important;
         }
         .produtos{
-            padding-left: 20px !important; 
+            padding-left: 15px !important; 
         }
         .produto1{
             padding-bottom: 20px !important;
         }
     }
     .section3{
-        h2{
-            font-size: 2.7em !important;
+        .fundolives {
+            display: none !important;
         }
-        h2, p{
-            padding-left: 20px !important;
+        .video1 {
+            height: 180px !important;
+            width: 100% !important;
+        }
+        h2{
+            padding: 40px 0 15px 15px !important;
+            font-size: 2.5em !important;
+        }
+        p{
+            padding-left: 15px !important;
+            font-size: 22px !important;
         }
         .btn1, .btn1:hover{
             font-size: 1.2em !important;
         }
     }
     .section4{
-        h2, p{
-            padding-left: 20px !important;
+        h2{
+            font-size: 2.5em !important;
+            padding-left: 15px !important;
+        }
+        .fundoeventos {
+            display: none;
+        }        
+        .video2 {
+            width: 100% !important;
+            height: 180px !important;
+        }
+        p{
+            padding: 15px 0 0 15px !important
+        }
+        p{
+            padding: 15px 0 0 15px !important;
+            font-size: 24px !important;
+        }
+        h3{ 
+            font-size: 2em !important;
         }
         .circleDotsAnima{
             display: none !important;
         }
         .feiras{
-            padding-left: 20px !important;
+            padding-left: 15px !important;
         }
     }
     .section5{
         padding: 30px 0 200px 0 !important;
-        .seta1{
-            padding-top: 30px !important;
+        h2{
+            font-size: 2.5em !important;
+            padding-left: 15px !important;     
+        }
+        p{
+            margin-left: 15px !important;
+            text-align: left !important;
+            font-size: 24px !important;
+        }
+        .justify-content-center{
+            -webkit-box-pack: left!important;
+            -ms-flex-pack: left!important;
+            justify-content: left!important;
         }
     }
     .section6{
         h2{
-            font-size: 3em !important;
+            font-size: 2.5em !important;
+        }
+        p {
+            padding-bottom: 0 !important;
+        }
+        .photo02 {
+            display: none !important;
         }
         .nove{
-            right: 200px !important;
+            position: relative !important;
+            right: 40px !important;
             font-size: 15em !important;
+            top: 0px !important;
         }
         .bilhoes{
             font-size: 5.5em !important;
+            top: 172px !important;
         }
     }
     .section7{
         padding: 15px 0 325px 0 !important;
         h2 {
-            padding-left: 0 !important
+            padding-left: 15px !important
             
         }
         p{
-            padding-left: 55px !important;
+            padding-left: 20px !important;
         }
     }
     .section8{
         h2 {
-            padding: 25px 0 38px 20px !important;
+            padding: 25px 0 38px 15px !important;
+            font-size: 2.5em !important;
         }
         p {
-            padding: 0 0 10px 20px !important;
+            padding: 0 0 10px 15px !important;
+            font-size: 22px !important;
         }
         .waves02{
             display: none !important;
@@ -1130,7 +1194,7 @@ select {
     }
     .section9{
         h2{
-            font-size: 3em !important;
+            font-size: 2.5em !important;
         }
     }
 
